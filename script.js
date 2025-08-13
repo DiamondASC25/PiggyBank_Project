@@ -174,10 +174,10 @@ button7D.onclick = function (){
 
 // Question 8 Button Reactions
 button8A.onclick = function (){
-    correct8 = 1
+    correct8 = 0
 }
 button8B.onclick = function (){
-    correct8 = 0
+    correct8 = 1
 }
 button8C.onclick = function (){
     correct8 = 0
@@ -188,7 +188,7 @@ button8D.onclick = function (){
 
 // Question 9 Button Reactions
 button9A.onclick = function (){
-    correct9 = 1
+    correct9 = 0
 }
 button9B.onclick = function (){
     correct9 = 0
@@ -197,7 +197,7 @@ button9C.onclick = function (){
     correct9 = 0
 }
 button9D.onclick = function (){
-    correct9 = 0
+    correct9 = 1
 }
 
 // Question 10 Button Reactions
@@ -252,7 +252,7 @@ submitButton.onclick = function() { // Adds score and then runs saveStuff
 }
 
 nameInput.oninput = function() {
-    if(nameInput.value.length > 0 && nameInput.value!=" "){
+    if(nameInput.value.length >= 0 && nameInput.value!=" "){
         intro.innerHTML = "Hey " + nameInput.value + ", test your knowledge here!";
     }
 }

@@ -155,17 +155,16 @@ button {
 }
 
 #diamond {
-    margin-left: 200px;
-    margin-right: 200px;
+    width: 10%
 }
 #mathias {
-    margin-right: 200px;
+    width:10%
 }
 #mario {
-    margin-left: 55px;
+   width:10%
 }
 #somkene {
-    margin-left: 50px;
+   width:10%
 }
 
 
@@ -183,23 +182,25 @@ button {
     
 } 
 #first {
-    margin-left: 100px;
-    margin-right: 100px;
+    margin-left: 50px;
+    margin-right: 50px;
     width: 20%
 }
 
 #second {
-    margin-right: 100px;
+    margin-right: 50px;
     width: 20%
 }
 
 #third {
     width: 20%;
+    margin-right: 50px;
     
 }
 
 #fourth {
     width: 20%;
+    margin-right: 50px;
 }
   
 #submissions_container {
@@ -254,5 +255,23 @@ strong {
 }
 
 
+@media screen and(max-width:480px){
+    .desc {
+        font-size: 6px;
+        
+    }
+    .name {
+        font-size: 6px;
+    }
+}
 
+@media screen and(max-width:1900px){
+    .desc {
+        font-size: 6px;
+        background-color: red;
+    }
+    .name {
+        font-size: 6px;
+    }
+}
 
