@@ -33,11 +33,3 @@ for(let i = 0; i < allSubmissions.length; i++){
     
 }
 
-// div.id = "div_id" ;
-// div.className = "div_class";
-// div.style = "background-color: red;";
-// div.style.width = "100px";
-// div.style.height = "100px";
-// document.body.appendChild(div);  
-
-// let name = 

@@ -155,41 +155,53 @@ button {
 }
 
 #diamond {
-    margin-left: 250px;
-    margin-right: 430px;
+    margin-left: 200px;
+    margin-right: 200px;
 }
 #mathias {
-    margin-right: 400px;
+    margin-right: 200px;
 }
 #mario {
     margin-left: 55px;
 }
+#somkene {
+    margin-left: 50px;
+}
 
-.name {
-    display: inline-flex;
+
+.about-us-name {
+    display: flex;
     flex-direction: row;
     justify-content: space-around;
     padding: 10px;
 }
 
-.desc {
+ .desc {
+  display: inline-flex; 
+    flex-direction: row;
+    font-size: 2em;
+    
+} 
 #first {
     margin-left: 100px;
     margin-right: 100px;
-width: 25%
-}
-#second {
-    margin-right: 100px;
-width: 25%
-}
-#third {
-width: 25%
-}
-    display: inline-flex; 
-    flex-direction: row;
-    font-size: 2em;
+    width: 20%
 }
 
+#second {
+    margin-right: 100px;
+    width: 20%
+}
+
+#third {
+    width: 20%;
+    
+}
+
+#fourth {
+    width: 20%;
+}
+  
 #submissions_container {
     display: inline-flex;
     justify-content: center;
@@ -234,6 +246,11 @@ button:hover {
 
 strong {
     height: auto;
+}
+
+.review {
+    display: flex;
+    justify-content: center;
 }
 
 

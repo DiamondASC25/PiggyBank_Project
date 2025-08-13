@@ -76,7 +76,7 @@ const button10D = document.getElementById('button10D');
 
 // Question 1 Button Reactions
 button1A.onclick = function (){
-    correct1 = 1
+    correct1 = 0
 }
 button1B.onclick = function (){
     correct1 = 0
@@ -85,15 +85,15 @@ button1C.onclick = function (){
     correct1 = 0
 }
 button1D.onclick = function (){
-    correct1 = 0
+    correct1 = 1
 }
 
 // Question 2 Button Reactions
 button2A.onclick = function (){
-    correct2 = 1
+    correct2 = 0
 }
 button2B.onclick = function (){
-    correct2 = 0
+    correct2 = 1
 }
 button2C.onclick = function (){
     correct2 = 0
@@ -104,7 +104,7 @@ button2D.onclick = function (){
 
 // Question 3 Button Reactions
 button3A.onclick = function (){
-    correct3 = 1
+    correct3 = 0
 }
 button3B.onclick = function (){
     correct3 = 0
@@ -113,18 +113,18 @@ button3C.onclick = function (){
     correct3 = 0
 }
 button3D.onclick = function (){
-    correct3 = 0
+    correct3 = 1
 }
 
 // Question 4 Button Reactions
 button4A.onclick = function (){
-    correct4 = 1
+    correct4 = 0
 }
 button4B.onclick = function (){
     correct4 = 0
 }
 button4C.onclick = function (){
-    correct4 = 0
+    correct4 = 1
 }
 button4D.onclick = function (){
     correct4 = 0
@@ -132,10 +132,10 @@ button4D.onclick = function (){
 
 // Question 5 Button Reactions
 button5A.onclick = function (){
-    correct5 = 1
+    correct5 = 0
 }
 button5B.onclick = function (){
-    correct5 = 0
+    correct5 = 1
 }
 button5C.onclick = function (){
     correct5 = 0
@@ -160,13 +160,13 @@ button6D.onclick = function (){
 
 // Question 7 Button Reactions
 button7A.onclick = function (){
-    correct7 = 1
+    correct7 = 0
 }
 button7B.onclick = function (){
     correct7 = 0
 }
 button7C.onclick = function (){
-    correct7 = 0
+    correct7 = 1
 }
 button7D.onclick = function (){
     correct7 = 0
@@ -220,7 +220,7 @@ let nameInput = document.getElementById("name_input");
 let intro = document.getElementById("intro");
 
 submitButton.onclick = function() { // Adds score and then runs saveStuff
-    score = correct1 + correct2 + correct3 + correct4 + correct5;
+    score = correct1 + correct2 + correct3 + correct4 + correct5 + correct6 + correct7 + correct8 + correct9 + correct10;
     let username = nameInput.value;
     
     if(!username) {
