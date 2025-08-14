@@ -74,6 +74,8 @@ const button10B = document.getElementById('button10B');
 const button10C = document.getElementById('button10C');
 const button10D = document.getElementById('button10D');
 
+
+
 // Question 1 Button Reactions
 button1A.onclick = function (){
     correct1 = 0
@@ -256,6 +258,8 @@ nameInput.oninput = function() {
         intro.innerHTML = "Hey " + nameInput.value + ", test your knowledge here!";
     }
 }
+
+
 
 
 

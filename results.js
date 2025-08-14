@@ -1,7 +1,7 @@
 let allSubmissions = JSON.parse(localStorage.getItem("all_Submissions"));
 const allDiv = document.getElementById("submissions_container");
 
-for(let i = 0; i < allSubmissions.length; i++){
+for(let i = allSubmissions.length-1; i >= 0; i--){
     const div = document.createElement("div");
     const item = allSubmissions[i];
     const date = new Date(item.date);
@@ -17,7 +17,7 @@ for(let i = 0; i < allSubmissions.length; i++){
 
     nameContainer.innerHTML = "Name: " + item.name;
     scoreContainer.innerHTML = "Score: " + item.score;
-    dateTxt.innerHTML = date.getMonth() + "/" + date.getDate() + "/" + date.getFullYear() + " | " + date.getHours() + ":" + date.getMinutes() + ":" + date.getSeconds();
+    dateTxt.innerHTML = date.getMonth()+1 + "/" + date.getDate() + "/" + date.getFullYear() + " | " + date.getHours() + ":" + date.getMinutes() + ":" + date.getSeconds();
     
     
     
@@ -32,4 +32,10 @@ for(let i = 0; i < allSubmissions.length; i++){
      
     
 }
+let clearButton = document.getElementById("clear_button");
 
+clearButton.onclick = function() {
+    localStorage.clear();
+    console.log("hi");
+    location.reload();
+}
